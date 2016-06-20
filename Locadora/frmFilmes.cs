@@ -34,7 +34,8 @@ namespace Locadora
 
         private void frmFilmes_Load(object sender, EventArgs e)
         {
-
+            Camadas.BLL.Filme bllFilme = new Camadas.BLL.Filme();
+            dgvFilmes.DataSource = bllFilme.Select(); 
         }
     }
 }

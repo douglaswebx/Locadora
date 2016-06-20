@@ -45,7 +45,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvFilmes = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -143,7 +145,7 @@
             // btnInserir
             // 
             this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInserir.Location = new System.Drawing.Point(33, 447);
+            this.btnInserir.Location = new System.Drawing.Point(18, 387);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(122, 43);
             this.btnInserir.TabIndex = 10;
@@ -154,7 +156,7 @@
             // btnEditar
             // 
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(169, 447);
+            this.btnEditar.Location = new System.Drawing.Point(154, 387);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(122, 43);
             this.btnEditar.TabIndex = 11;
@@ -164,7 +166,7 @@
             // btnRemover
             // 
             this.btnRemover.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.Location = new System.Drawing.Point(305, 447);
+            this.btnRemover.Location = new System.Drawing.Point(290, 387);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(122, 43);
             this.btnRemover.TabIndex = 12;
@@ -174,7 +176,7 @@
             // btnGravar
             // 
             this.btnGravar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGravar.Location = new System.Drawing.Point(441, 447);
+            this.btnGravar.Location = new System.Drawing.Point(426, 387);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(122, 43);
             this.btnGravar.TabIndex = 13;
@@ -185,7 +187,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(577, 447);
+            this.btnCancelar.Location = new System.Drawing.Point(562, 387);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 43);
             this.btnCancelar.TabIndex = 14;
@@ -195,7 +197,7 @@
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(713, 447);
+            this.btnVoltar.Location = new System.Drawing.Point(698, 387);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(122, 43);
             this.btnVoltar.TabIndex = 15;
@@ -220,11 +222,21 @@
             this.panel1.Size = new System.Drawing.Size(729, 323);
             this.panel1.TabIndex = 16;
             // 
+            // dgvFilmes
+            // 
+            this.dgvFilmes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFilmes.Location = new System.Drawing.Point(18, 458);
+            this.dgvFilmes.Name = "dgvFilmes";
+            this.dgvFilmes.RowTemplate.Height = 24;
+            this.dgvFilmes.Size = new System.Drawing.Size(802, 184);
+            this.dgvFilmes.TabIndex = 17;
+            // 
             // frmFilmes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 771);
+            this.ClientSize = new System.Drawing.Size(858, 677);
+            this.Controls.Add(this.dgvFilmes);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCancelar);
@@ -237,6 +249,7 @@
             this.Load += new System.EventHandler(this.frmFilmes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFilmes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,5 +273,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvFilmes;
     }
 }

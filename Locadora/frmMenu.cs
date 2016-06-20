@@ -47,5 +47,12 @@ namespace Locadora
             frmRel.MdiParent = this;
             frmRel.Show(); 
         }
+
+        private void filmesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFilmes frmFil = new frmFilmes();
+            frmFil.MdiParent = this;
+            frmFil.Show(); 
+        }
     }
 }

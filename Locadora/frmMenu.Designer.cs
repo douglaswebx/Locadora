@@ -39,9 +39,9 @@
             this.geraisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,20 +84,21 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(179, 32);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(181, 32);
             this.clientesToolStripMenuItem.Text = "&Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // filmesToolStripMenuItem
             // 
             this.filmesToolStripMenuItem.Name = "filmesToolStripMenuItem";
-            this.filmesToolStripMenuItem.Size = new System.Drawing.Size(179, 32);
+            this.filmesToolStripMenuItem.Size = new System.Drawing.Size(181, 32);
             this.filmesToolStripMenuItem.Text = "&Filmes";
+            this.filmesToolStripMenuItem.Click += new System.EventHandler(this.filmesToolStripMenuItem_Click);
             // 
             // locaçãoToolStripMenuItem
             // 
             this.locaçãoToolStripMenuItem.Name = "locaçãoToolStripMenuItem";
-            this.locaçãoToolStripMenuItem.Size = new System.Drawing.Size(179, 32);
+            this.locaçãoToolStripMenuItem.Size = new System.Drawing.Size(181, 32);
             this.locaçãoToolStripMenuItem.Text = "&Locação";
             // 
             // toolStripMenuItem1
@@ -122,7 +123,7 @@
             this.geraisToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem1});
             this.geraisToolStripMenuItem.Name = "geraisToolStripMenuItem";
-            this.geraisToolStripMenuItem.Size = new System.Drawing.Size(181, 32);
+            this.geraisToolStripMenuItem.Size = new System.Drawing.Size(179, 32);
             this.geraisToolStripMenuItem.Text = "Gerais";
             // 
             // clientesToolStripMenuItem1
@@ -134,8 +135,15 @@
             // graficosToolStripMenuItem
             // 
             this.graficosToolStripMenuItem.Name = "graficosToolStripMenuItem";
-            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(181, 32);
+            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(179, 32);
             this.graficosToolStripMenuItem.Text = "Graficos";
+            // 
+            // clientesToolStripMenuItem2
+            // 
+            this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
+            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(179, 32);
+            this.clientesToolStripMenuItem2.Text = "Clientes";
+            this.clientesToolStripMenuItem2.Click += new System.EventHandler(this.clientesToolStripMenuItem2_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -149,13 +157,6 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(66, 31);
             this.sairToolStripMenuItem.Text = "S&air";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
-            // clientesToolStripMenuItem2
-            // 
-            this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(181, 32);
-            this.clientesToolStripMenuItem2.Text = "Clientes";
-            this.clientesToolStripMenuItem2.Click += new System.EventHandler(this.clientesToolStripMenuItem2_Click);
             // 
             // frmMenu
             // 
