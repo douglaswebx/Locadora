@@ -24,7 +24,15 @@ namespace Locadora
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-
+            Camadas.BLL.Filme bllFilme = new Camadas.BLL.Filme();
+            Camadas.MODEL.Filme filme = new Camadas.MODEL.Filme();
+            filme.id = Convert.ToInt32("-1");
+            filme.titulo = txtTitulo.Text;
+            filme.genero = txtGenero.Text;
+            filme.quantidade = Convert.ToInt32(txtQuantidade.Text);
+            filme.valor = Convert.ToSingle(txtValor.Text);
+            bllFilme.Insert(filme);
+            dgvFilmes.DataSource = bllFilme.Select(); 
         }
 
         private void btnInserir_Click(object sender, EventArgs e)
